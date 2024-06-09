@@ -17,7 +17,7 @@
 .nav {
     background-color: #415A77;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     top: 80px;
     width: 100%;
     z-index: 1000;
@@ -32,8 +32,8 @@
 .ul .li {
     display: flex;
     flex-wrap: wrap;
-}
-
+    }
+    
 .ul .li li {
     display: inline;
     margin: 0 15px;
