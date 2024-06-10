@@ -90,7 +90,9 @@
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: italic;}
+    font-style: italic;
+    text-align: center;
+}
 
 .footer {
     background-color: #39393a;
