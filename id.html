@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ss.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital@1&family=DM+Serif+Text:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <title>Bookshelf</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1>Bookshelf</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#Tambah_Buku">Tambah Buku</a></li>
+                    <li><a href="#Cari_Buku">Cari Buku</a></li>
+                    <li><a href="#List_Buku">List Buku</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="Tambah_Buku" id="Tambah_Buku">
+            <h2>Masukkan Buku Bacaan</h2>
+            <form id="inputBook">
+
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" required>
+                </div>
+
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" required>
+                </div>
+
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label>
+                    <input id="inputBookYear" type="number" required>
+                </div>
+
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+
+                <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai
+                        dibaca</span></button>
+
+            </form>
+
+        </section>
+
+        <section class="Cari_Buku" id="Cari_Buku">
+            <h2>Cari Buku (Opsional)</h2>
+
+            <form id="searchBook">
+
+                <label for="searchBookTitle">Judul</label>
+                <input id="searchBookTitle" type="text">
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+
+        </section>
+
+        <section class="daftar_buku" id="List_Buku">
+            <h2>Daftar Buku Anda</h2>
+
+            <div class="listbukubelumselesai" class="daftar_buku">
+                <article class="daftar_buku">
+                    <h3>Belum Selesai Dibaca</h3>
+                </article>
+            </div>
+
+            <div class="listbukuselesai" class="daftar_buku">
+                <article class="daftar_buku">
+                    <h3>Selesai Dibaca</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <div class="footer">
+        <p>Kontak Penulis</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/na.jrill" target="_blank">Instagram</a>
+            <a href="https://github.com/Najer-jril" target="_blank">GitHub</a>
+            <p>Ditujukan Untuk Menyelesaikan Submission.</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
